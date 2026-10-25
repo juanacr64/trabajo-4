@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro para Tienda</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Práctica de Selectores CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <main>
-        <h1>Registro de Usuario</h1>
+    <main id="main-container">
+        <header>
+            <h1>Práctica de Selectores CSS</h1>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
 
-        <form action="#" method="post">
-            <div>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
-            </div>
+        <section class="content-section">
+            <h2 class="section-title">Formulario de Registro</h2>
+            <p>Evaluación de selectores de etiqueta, ID, clases, atributos y avanzados.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-            <div>
-                <label for="comentarios">Comentarios o Mensaje:</label>
-                <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..."></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
 </body>
